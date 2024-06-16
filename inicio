@@ -1,0 +1,47 @@
+1. O que são Bancos de Dados
+
+Um banco de dados é uma coleção organizada de dados que pode ser facilmente acessada, gerenciada e atualizada. Os bancos de dados são usados para armazenar, gerenciar e recuperar informações de forma eficiente. 
+Eles são fundamentais para várias aplicações, desde sistemas de gerenciamento de clientes até grandes sistemas de e-commerce.
+
+TIPOS:
+- **Relacionais:** MySQL, PostgreSQL, Oracle, SQL Server
+- **Não relacionais:** MongoDB, Cassandra, Redis
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2. Diferença entre SQL e NoSQL
+
+SQL (Structured Query Language)
+- **Modelo de Dados:** Relacional (tabelas com linhas e colunas)
+- **Schema:** Estrutura fixa (schema rígido)
+- **Consistência:** Alta (ACID - Atomicidade, Consistência, Isolamento, Durabilidade)
+- **Consultas:** Utiliza linguagem SQL para manipulação e consulta de dados
+
+NoSQL (Not Only SQL)
+- **Modelo de Dados:** Não relacional (documentos, grafos, chave-valor, colunar)
+- **Schema:** Estrutura flexível (schema dinâmico)
+- **Consistência:** Eventual, dependendo do tipo de banco NoSQL
+- **Consultas:** Varia conforme o banco de dados; geralmente usa APIs específicas ou linguagens de consulta próprias
+
+Quando usar cada um?
+- **SQL:** Ideal para aplicações que requerem transações complexas e integridade de dados, como sistemas bancários.
+- **NoSQL:** Adequado para grandes volumes de dados, dados não estruturados ou semiestruturados, e quando a flexibilidade e escalabilidade são importantes, como em sistemas de redes sociais.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+3. O que é uma DBMS
+
+DBMS (Database Management System) é um sistema de software que permite a criação, gerenciamento e manipulação de bancos de dados. Um DBMS oferece várias funcionalidades, incluindo:
+
+- **Definição de Dados:** Criação e modificação da estrutura do banco de dados (tabelas, índices, etc.).
+- **Manipulação de Dados:** Inserção, atualização, exclusão e recuperação de dados.
+- **Administração de Dados:** Controle de acesso, segurança e gerenciamento de usuários.
+- **Recuperação e Backup:** Proteção e recuperação de dados em caso de falhas.
+
+### Exemplos de DBMS:
+- **Relacionais:** MySQL, PostgreSQL, Oracle, SQL Server
+- **Não relacionais:** MongoDB, Cassandra, Redis
+
+### Vantagens de usar um DBMS:
+- **Consistência de Dados:** Garante que os dados sejam precisos e consistentes.
+- **Segurança:** Controle de acesso e proteção dos dados contra acesso não autorizado.
+- **Integridade dos Dados:** Mantém a integridade e evita a duplicação de dados.
+- **Eficiência:** Otimização de consultas e operações de banco de dados.
+
