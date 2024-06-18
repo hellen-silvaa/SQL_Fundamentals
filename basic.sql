@@ -7,6 +7,7 @@
 
 ------------------------------------------------------------------------------------------
 
+
 --2. Aprendendo a aplicar um desconto e vizualizar valor original e campo desconto:
 
 --USE sakila;
