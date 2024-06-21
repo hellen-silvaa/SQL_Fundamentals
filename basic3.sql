@@ -104,3 +104,78 @@
 -- left ->  vai mostras as primeiras 2 primeiras letras
 -- SELECT left( 'Carros', 2)
 
+
+
+-- consultar usuarios dentro da database
+-- USE mysql;
+-- SELECT * FROM user
+
+-- SELECT * FROM mysql.user
+
+--CRIAR USUÁRIOS E DAR PERMISSÕES
+
+-- -- criando usuário Hellen com a senha '1234'
+-- CREATE USER Hellen IDENTIFIED BY '1234';
+
+-- --joão só pode acessar o bd através do localhost
+-- CREATE USER João@localhost IDENTIFIED BY '1234';
+
+-- --Priscila só pode acessar o bd através das maquinas dentro daquele dominio da emrpesa
+-- CREATE USER Priscila@hellen.com IDENTIFIED BY '1234';
+-- SELECT * FROM mysql.user
+
+
+
+-- -- REMOVER USUÁRIOS
+-- DROP USER Priscila@hellen.com;
+-- SELECT * FROM mysql.user
+
+-- TROCAR A SENHA DO USUÁRIO
+-- SET PASSWORD FOR João@localhost ='1111';
+-- SELECT * FROM mysql.user
+
+-- APLICAR PRIVILEGIOS PARA OS USUÁRIOS
+
+
+-- verificar quais permissoes aquele usuario possui
+SHOW GRANTS FOR Hellen;
+
+-- SELECT * FROM mysql.user;
+
+-- GRANT SELECT, INSERT, UPDATE, DELETE  --QUAL PERMISSÃO DAR
+-- ON sakila.*  --ONDE
+-- TO Hellen;   -- PARA QUEM
+
+-- ADICIONANDO ADMIN NA DATABASE SAKILA 
+
+-- GRANT ALL
+-- ON sakila.*
+-- TO João@localhost;
+
+-- SHOW GRANTS FOR João@localhost;
+
+-- ADICIONANDNO UM ADMIN PARA TODOS 
+
+-- GRANT ALL
+-- ON *.*
+-- TO Hellen;
+
+-- SHOW GRANTS FOR Hellen;
+
+-- SELECT * FROM mysql.user;
+
+--REMOVENDO PRIVILEGIOS DOS USUARIOS
+CREATE USER Priscila IDENTIFIED BY '12234';
+
+SHOW GRANTS FOR Priscila;
+
+GRANT SELECT, INSERT, UPDATE
+ON sakila.*
+TO Priscila;
+
+-- removendo acesso
+
+REVOKE UPDATE
+ON sakila.*
+FROM Priscila;
+
