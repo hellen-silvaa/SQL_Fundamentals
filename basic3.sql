@@ -8,7 +8,7 @@
 --     FROM payment)
     
 -- Trabalhando com o MAX em SubQueries
--- USE sakila;
+-- USE sakila;;
 
 -- SELECT *
 -- FROM payment
