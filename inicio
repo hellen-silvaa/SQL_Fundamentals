@@ -17,6 +17,7 @@ SQL (Structured Query Language)
 - **Consultas:** Utiliza linguagem SQL para manipulação e consulta de dados
 
 NoSQL (Not Only SQL)
+
 - **Modelo de Dados:** Não relacional (documentos, grafos, chave-valor, colunar)
 - **Schema:** Estrutura flexível (schema dinâmico)
 - **Consistência:** Eventual, dependendo do tipo de banco NoSQL
